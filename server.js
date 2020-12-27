@@ -3,7 +3,7 @@ const socketIO = require('socket.io')
 const DeviceRepository = require("./device/DeviceRepository.js");
 const IGHouseDevice = require("./device/DeviceStatus.js");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
 
 const app = express();
